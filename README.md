@@ -4,7 +4,7 @@ A React web app for finding albums, previewing their tracks, and keeping a perso
 
 
 
-**Live demo:** _add your deployed link here_
+**Live demo:** https://album-tracker-henna.vercel.app/
 
 ## Features
 
@@ -55,6 +55,7 @@ Open the URL Vite prints in the terminal (usually http://localhost:5173).
 src/
 ├── components/
 │   ├── AlbumCard.jsx       # Album tile used in search and collection grids
+|   ├── AlbumPlayback.jsx   
 │   ├── Navbar.jsx          # Top navigation
 │   ├── Player.jsx          # Mini player bar
 │   ├── Stars.jsx           # Star rating input
@@ -67,10 +68,13 @@ src/
 │   └── useLocalStorage.js      # State that persists in localStorage
 ├── pages/
 │   ├── Discover.jsx        # Search and results
+|   ├── AiPicks.jsx
 │   ├── AlbumDetail.jsx     # Track list and save/rate controls
 │   └── Collection.jsx      # Saved albums with filters
 ├── services/
-│   └── itunes.js           # All API calls and link helpers
+│   ├── itunes.js           # All API calls and link helpers
+|   ├── deezer.js
+|   └── ai.js
 ├── App.jsx                 # Page switching with useState (no router)
 ├── index.css
 └── main.jsx
