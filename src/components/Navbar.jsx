@@ -17,6 +17,7 @@ export default function Navbar({ page, setPage }) {
       <h1 className="logo">Album Tracker</h1>
       <nav>
         {tab("discover", "Discover")}
+        {tab("ai", "AI picks")}
         {tab("collection", `My collection (${count})`)}
       </nav>
     </header>
