@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
-import TrackList from "../components/TrackList.jsx";
+// import TrackList from "../components/TrackList.jsx";
 import StatusSelect from "../components/StatusSelect.jsx";
 import Stars from "../components/Stars.jsx";
 import { useCollection } from "../context/CollectionContext.jsx";
 import { bigArt, getAlbumTracks, spotifySearchUrl, youtubeSearchUrl } from "../services/itunes.js";
 import SpotifyEmbed, { toEmbedUrl } from "../components/SpotifyEmbed.jsx";
+// import DeezerPlayer from "../components/DeezerPlayer.jsx";
+  import AlbumPlayback from "../components/AlbumPlayback.jsx";
 
 export default function AlbumDetail({ albumId, back }) {
     const { albums, save, update, remove } = useCollection();
@@ -70,7 +72,10 @@ export default function AlbumDetail({ albumId, back }) {
                 </div>
             </div>
             {saved && <SpotifyEmbed link={saved.spotifyUrl} />}
-            <TrackList tracks={tracks} />
+            {/* <DeezerPlayer title={album.collectionName} artist={album.artistName} />
+            <TrackList tracks={tracks} /> */}
+            <AlbumPlayback title={album.collectionName} artist={album.artistName} tracks={tracks} />
+
         </section>
     );
 }

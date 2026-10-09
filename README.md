@@ -2,9 +2,7 @@
 
 A React web app for finding albums, previewing their tracks, and keeping a personal listening log. Search the iTunes catalog, play 30-second previews in a built-in mini player, and save albums with a status, star rating, and notes.
 
-<!-- Add a screenshot or GIF here once you have one:
-![Album Tracker screenshot](docs/screenshot.png)
--->
+
 
 **Live demo:** _add your deployed link here_
 
